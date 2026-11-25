@@ -1,0 +1,22 @@
+# Slack app manifest za SlackMail.
+# api.slack.com/apps → Create New App → From a manifest → izaberi workspace → nalepi ovo.
+display_information:
+  name: SlackMail
+  description: Prosleđuje odabrane Slack poruke na mejl dok nisi za računarom.
+  background_color: "#4a154b"
+oauth_config:
+  scopes:
+    user:
+      - channels:read      # lista javnih kanala
+      - channels:history   # poruke u javnim kanalima
+      - groups:read        # lista privatnih kanala u kojima si
+      - groups:history     # poruke u privatnim kanalima
+      - im:read            # lista direktnih poruka
+      - im:history         # direktne poruke
+      - mpim:read          # lista grupnih direktnih poruka
+      - mpim:history       # grupne direktne poruke
+      - users:read         # imena i slike pošiljalaca
+settings:
+  org_deploy_enabled: false
+  socket_mode_enabled: false
+  token_rotation_enabled: false
