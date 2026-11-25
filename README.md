@@ -86,3 +86,7 @@ Sources/SlackMail/
     Keychain.swift, Storage.swift, Models.swift, SampleMail.swift
   UI/                    ikonica za traku, popover, podešavanja
 ```
+
+## Licenca
+
+MIT — vidi [LICENSE](LICENSE).
